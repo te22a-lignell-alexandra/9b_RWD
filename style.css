@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    border-radius: 2vw;
+}
+
+.header_logos{
+    border: 2px solid red;
+    border-radius: 2vw;
+}
