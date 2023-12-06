@@ -49,6 +49,10 @@ article{
     margin: 5px;
 }
 
+.img{
+    display: none;
+}
+
 footer{
     text-align: center;
     border: 2px solid red;
@@ -113,5 +117,76 @@ footer{
         grid-column: 1/3;
         grid-row: 3/4;
     }
+}
 
+@media screen and (min-width: 1008px){
+    body{
+        display: grid;
+        grid-template-columns: 14vw 70vw 14vw;
+        grid-template-rows: 30vh 64vh 3vh;
+    }
+
+    header{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-size: calc(1rem + .5vw);
+    }
+
+    .header_logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .header_logos > img{
+        max-height: 40px;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: center;
+        border: 2px solid red;
+        border-radius: 1.5vw;
+        gap: 2vh;
+    }
+
+    nav > img{
+        border: 2px solid black;
+        border-radius: 1vw;
+    }
+
+    main{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    article{
+        height: 97%;
+        font-size: calc(1rem + .4vw);
+    }
+
+    .img{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        display: contents; 
+    }
+
+    .img > img{
+        border: 2px solid red;
+        border-radius: 1.5vw;   
+        height: 100%;
+        width: auto;
+        max-height: 99%;
+        max-width: 99%;
+    }
+
+    footer{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
 }
